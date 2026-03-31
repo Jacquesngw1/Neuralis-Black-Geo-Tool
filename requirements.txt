@@ -1,0 +1,14 @@
+# Core dependencies
+requests>=2.31.0
+
+# Geospatial
+folium>=0.15.0
+
+# Data processing
+# (csv and json are part of the Python standard library)
+
+# Testing
+pytest>=7.4.0
+
+# Optional: for shapefile export
+# pyshp>=2.3.0

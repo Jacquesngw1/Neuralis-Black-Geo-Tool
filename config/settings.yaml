@@ -1,0 +1,24 @@
+geocoding:
+  provider: nominatim          # nominatim | google | here
+  api_key: ""                  # Required for google/here providers
+  timeout: 10
+
+ip_geolocation:
+  provider: ip-api              # ip-api | ipinfo
+  api_key: ""
+
+neural:
+  model: default
+  confidence_threshold: 0.75
+
+export:
+  default_format: geojson
+  output_dir: ./output
+
+clustering:
+  default_k: 5
+  max_iter: 100
+
+logging:
+  level: INFO
+  file: ""
