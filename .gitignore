@@ -1,0 +1,38 @@
+# Python byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.eggs/
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Pytest / test cache
+.pytest_cache/
+.cache/
+*.log
+
+# Output files (generated at runtime)
+output/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.DS_Store
+
+# Environment / secrets
+.env
+*.env.local
+secrets.yaml
