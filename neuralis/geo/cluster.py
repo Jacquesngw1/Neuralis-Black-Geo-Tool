@@ -4,7 +4,7 @@ cluster.py — Geographic clustering using K-Means and DBSCAN-like algorithms.
 
 import math
 import random
-from typing import Sequence
+from typing import Optional, Sequence
 
 
 def _haversine(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
@@ -24,7 +24,7 @@ class KMeansGeo:
     lat/lon values (acceptable for small geographic extents).
     """
 
-    def __init__(self, k: int = 5, max_iter: int = 100, seed: int | None = None):
+    def __init__(self, k: int = 5, max_iter: int = 100, seed: Optional[int] = None):
         self.k = k
         self.max_iter = max_iter
         self._rng = random.Random(seed)
