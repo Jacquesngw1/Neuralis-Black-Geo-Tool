@@ -11,7 +11,7 @@ import math
 import urllib.parse
 import urllib.request
 import json
-from typing import Optional
+from typing import Optional, Union
 
 
 class GeocoderError(Exception):
@@ -107,7 +107,7 @@ class Geocoder:
     # Helpers
     # ------------------------------------------------------------------
 
-    def _fetch_json(self, url: str) -> dict | list:
+    def _fetch_json(self, url: str) -> Union[dict, list]:
         req = urllib.request.Request(
             url,
             headers={"User-Agent": "Neuralis-Black-Geo-Tool/0.1"},
